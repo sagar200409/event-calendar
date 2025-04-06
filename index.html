@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Event Calendar</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/supabase.js" defer></script>
+  <script src="js/calendar.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>College Event Calendar</h1>
+    <nav>
+      <a href="index.html">Calendar</a>
+      <a href="gallery.html">Students</a>
+      <a href="admin/login.html">Admin</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="calendar-header">
+      <button id="prev-month">Previous</button>
+      <h2 id="current-month">Month Year</h2>
+      <button id="next-month">Next</button>
+    </div>
+    <div class="calendar" id="calendar"></div>
+    
+    <div class="upcoming-events">
+      <h2>Upcoming Events</h2>
+      <div id="events-list"></div>
+    </div>
+  </div>
+
+  <div id="event-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-date"></p>
+      <img id="modal-image" src="" alt="Event Image" style="max-width:100%;">
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+</body>
+</html>
